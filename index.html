@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pixel Desktop</title>
+
+<!-- ✅ YOUR FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- DESKTOP -->
+<div class="desktop">
+
+  <!-- ICONS -->
+   <div class="skills" onclick="openWindow('skillsWin')">
+    <img src="assets/Skills.png">
+    <p>Skills</p>
+  </div>
+
+  <div class="about" onclick="openWindow('aboutWin')">
+    <img src="assets/user.png">
+    <p>About</p>
+  </div>
+
+  
+
+  <div class="projects" onclick="openWindow('projectsWin')">
+    <img src="assets/comp.png">
+    <p >Projects</p>
+  </div>
+
+  <div class="contacts" onclick="openWindow('contactWin')">
+    <img src="assets/mail.png">
+    <p>Contact</p>
+  </div>
+<div class="clock" id="clock"></div>
+
+</div>
+<div class="dock">
+  <div class="image">
+    <a href="https://www.instagram.com/_dev_knsakr_/" target="_blank">
+    <img src="assets/Instagram.png">
+    </a>
+  </div>
+  <div class="image">
+    <a href="https://www.youtube.com/@Dev_kansakar" target="_blank">
+    <img src="assets/Youtube.png">
+    </a>
+  </div>
+  <div class="image">
+    <a href="https://github.com/Krinz-ctrl" target="_blank">
+    <img src="assets/Github.png">
+    </a>
+  </div>
+  <div class="image">
+    <a href="https://www.linkedin.com/in/dev-kansakar-300b652b4/" target="_blank">
+    <img src="assets/Linkedin.png">
+    </a>
+  </div>
+</div>
+
+
+<div id="skillsWin" class="window">
+  <div class="titlebar">
+    Skills
+    <span class="close" onclick="closeWindow('skillsWin')">X</span>
+  </div>
+
+  <div class="content">
+    Your skills content here...
+  </div>
+</div>
+
+
+<div id="aboutWin" class="window">
+  <div class="titlebar">
+    About
+    <span class="close" onclick="closeWindow('aboutWin')">X</span>
+  </div>
+  <div class="content">
+    Your about content here...
+  </div>
+</div>
+<div id="projectsWin" class="window">
+  <div class="titlebar">
+    Projects
+    <span class="close" onclick="closeWindow('projectsWin')">X</span>
+  </div>
+  <div class="content">
+    Your projects content here...
+  </div>
+</div>
+<div id="contactWin" class="window">
+  <div class="titlebar">
+    Contact
+    <span class="close" onclick="closeWindow('contactWin')">X</span>
+  </div>
+  <div class="content">
+    Your contact content here...
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
